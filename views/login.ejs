@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title><%= title %></title>
+  <link rel="stylesheet" href="public/ccs/style.css">
+</head>
+<body>
+  <nav class="navbar">
+    <ul>
+      <li><a href="about.ejs">About</a></li>
+    </ul>
+  </nav>
+  <div class="container">
+    <h1>Login</h1>
+    <form action="/login" method="POST">
+      <input type="email" name="email" placeholder="Enter your email" required>
+      <input type="password" name="password" placeholder="Enter your password" required>
+      <button type="submit">Login</button>
+    </form>
+    <p>Don't have an account? <a href="index.ejs">Register here</a>.</p>
+  </div>
+</body>
+</html>
